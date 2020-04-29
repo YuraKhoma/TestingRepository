@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* Для всього документа*/
+*{
+	/* Відступи */
+	margin: 0;
+	padding: 0;
+}
+
+html {height: 100%}
+
+body{
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #f7f7f7;
+	/* Розмір шрифту*/
+	font-size: 1em;
+	/* Шрифт */
+	font-family: "Segoe UI", sans-serif;
+	/* Висота ліній */
+	line-height: 135%;
+}
+
+/* для посиланнь */
+a{
+	color: #f48b8b;
+	/* без підчерків */
+	text-decoration: none;
+	/* плавно міняють колір */
+	transition: all.6s ease;
+	/* плавно міняють колір  в різних браузерах*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+}
+
+/* для посиланнь при наведенні*/
+a:hover{
+	color: #8b9ff5;
+	/* без підчерків */
+	text-decoration: none;
+	/* плавно міняють колір */
+	transition: all.6s ease;
+	/* плавно міняють колір  в різних браузерах*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+}
+
+/* при нажатті */
+a:active{color: #8ce4a6}
+
+/* стилі для картинок*/
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+hr{
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid #ccc;
+	padding: 0;
+}
+
+.right{float:right}
+.left{float:left}
+.clear{clear: both}
+
+/* При виділенні  */
+::selection{background: #f58b8b; color:#fff}
+::-moz-selection{background: #f58b8b; color:#fff}
+
+header, footer{
+	/* На весь екран */
+	width: 98%;
+	/* Колір фону білий */
+	background-color: #fff;
+	float: left;
+}
+
+header{
+	border-bottom: 2px solid silver;
+	padding: 1%;
+	
+	
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+	background: rgb(76,76,76); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#logo{
+	font-size: 2em;
+	font-family: Comic Snas MS, sans-serif;
+}
+
+.contact{
+	font-size: 2em;
+	font-family: Comic Sans MS, sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* стиль пошуку*/
+input[type=text].field{
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+
+/* стиль при нажатті на пошук */
+input[type=text].field:focus{
+		border: 2px solid #f58b8b
+}
+
+#menu{
+	color: #666;
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 1.7em;
+}
+
+#menu hr{
+	width: 500px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#menuHrefs a{
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: #626262
+}
+
+#menuHrefs a:Hover{
+	background-color: #cdcdcd;
+}
+
+/* Стилі для футера*/
+footer{
+	padding: 2%;
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	height: auto;
+	padding-bottom: 5%;
+}
+footer img{
+	width: 10%;
+	float: left;
+	margin-left: 1000px;
+}
+
+/* Опуск футера в низ */
+#page-wrap: after 
+{
+	content: "";
+	dispaly: block
+}
+
+footer, #page-wrap:after {height: 10px}
+
+#page-wrap{
+	min-height: 90%;
+	margin-bottom: -10px;
+}
+
+
