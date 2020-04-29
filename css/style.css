@@ -19,6 +19,7 @@ body{
 	font-family: "Segoe UI", sans-serif;
 	/* Висота ліній */
 	line-height: 135%;
+	background-color: purple;
 }
 
 /* для посиланнь */
@@ -82,8 +83,8 @@ header, footer{
 header{
 	border-bottom: 2px solid silver;
 	padding: 1%;
-	
-	
+
+
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
 	background: rgb(76,76,76); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
@@ -159,7 +160,7 @@ footer img{
 }
 
 /* Опуск футера в низ */
-#page-wrap: after 
+#page-wrap: after
 {
 	content: "";
 	dispaly: block
@@ -171,5 +172,3 @@ footer, #page-wrap:after {height: 10px}
 	min-height: 90%;
 	margin-bottom: -10px;
 }
-
-
